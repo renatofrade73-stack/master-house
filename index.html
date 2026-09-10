@@ -8,512 +8,510 @@
 <body>
 <x-dc>
 <helmet>
-<title>Imobiliária Master House — Curadoria de imóveis de alto padrão em Juiz de Fora</title>
-<meta name="description" content="Curadoria discreta de residências de alto padrão em Juiz de Fora. Da visita à escritura, com segurança jurídica e resposta em até 24 horas. 4,8 estrelas em avaliações de clientes.">
-<link rel="canonical" href="https://masterhouseimoveis.com.br/">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Imobiliária Master House">
-<meta property="og:title" content="Imobiliária Master House — Alto padrão em Juiz de Fora">
-<meta property="og:description" content="Curadoria discreta de residências de alto padrão. Da visita à escritura, com segurança jurídica e resposta em até 24 horas.">
-<meta property="og:url" content="https://masterhouseimoveis.com.br/">
-<meta property="og:image" content="https://masterhouseimoveis.com.br/compartilhamento.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Residência de alto padrão com piscina de borda infinita ao entardecer">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Imobiliária Master House — Alto padrão em Juiz de Fora">
-<meta name="twitter:description" content="Curadoria discreta de residências de alto padrão em Juiz de Fora.">
-<meta name="twitter:image" content="https://masterhouseimoveis.com.br/compartilhamento.jpg">
-<meta name="theme-color" content="#08090b">
+<title>Imobiliária Master House — Imóveis de alto padrão em Juiz de Fora</title>
+<meta name="description" content="Curadoria de residências de alto padrão em Juiz de Fora. Acompanhamento completo, da visita à escritura, com resposta em até 24 horas.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,600&family=Manrope:wght@300;400;500;600&family=Geomini&family=Lexend+Deca:wght@300;400;500;600&display=swap" rel="stylesheet">
-<script src="./image-slot.js"></script>
-<!-- Google Analytics 4 — troque G-XXXXXXXXXX pelo ID da sua propriedade e descomente:
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
--->
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@300;400;500;600;700&family=Geomini&display=swap" rel="stylesheet">
 <style>
-  html, body { margin:0; padding:0; background:#08090b; }
+  html { scroll-behavior:smooth; scroll-padding-top:110px; }
+  html, body { margin:0; padding:0; background:#0E1420; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior:auto; }
+    .bob { animation:none; }
+  }
+
+  #porque > div > div > div[data-rv] {
+    padding:22px 20px; margin:-22px -20px; border-radius:14px;
+    border:1px solid transparent;
+    transition: background 700ms cubic-bezier(0.16,1,0.3,1), transform 400ms linear(0,0.101,0.318,0.559,0.768,0.922,1.019,1.067,1.081,1.073,1.056,1.037,1.019,1.007,0.999,1), box-shadow 700ms cubic-bezier(0.16,1,0.3,1), border-color 800ms cubic-bezier(0.16,1,0.3,1);
+  }
+  #porque > div > div > div[data-rv]:hover {
+    background: color-mix(in srgb, var(--accent,#C9A46A) 10%, transparent);
+    border-color: color-mix(in srgb, var(--accent,#C9A46A) 55%, transparent);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 20px 44px rgba(20,26,40,0.14);
+  }
+  #porque > div > div > div[data-rv] > span {
+    transition: width 620ms cubic-bezier(0.16,1,0.3,1);
+  }
+  #porque > div > div > div[data-rv]:hover > span { width:58px; }
+  .reg { transition: background 420ms ease; }
+  .reg:hover { background: color-mix(in srgb, var(--accent,#C9A46A) 7%, #0E1420); }
+
+  .sobre-fig { transition: box-shadow 700ms ease; }
+  .sobre-fig img { transition: transform 1400ms cubic-bezier(0.16,1,0.3,1); }
+  .sobre-fig:hover img { transform:scale(1.06); }
+  .sobre-fig:hover { box-shadow:0 48px 96px rgba(20,26,40,0.3); }
+
+  #confianca figure { transition: opacity 420ms ease, transform 480ms cubic-bezier(0.16,1,0.3,1); }
+  #confianca figure:hover { transform:translateX(4px); }
+  #contato > div {
+    transition: border-color 800ms cubic-bezier(0.16,1,0.3,1), box-shadow 800ms cubic-bezier(0.16,1,0.3,1);
+  }
+  #contato > div:hover {
+    border-color: color-mix(in srgb, var(--accent,#C9A46A) 34%, transparent);
+    box-shadow: 0 50px 90px rgba(0,0,0,0.55), 0 0 60px color-mix(in srgb, var(--accent,#C9A46A) 8%, transparent);
+  }
+  .chip {
+    appearance:none; cursor:pointer; padding:10px 16px; border-radius:999px;
+    font-family:'Geomini','Archivo',sans-serif; font-size:12.5px; letter-spacing:0.01em;
+    color:#C4CAD6; background:rgba(242,237,228,0.05);
+    border:1px solid rgba(242,237,228,0.16);
+    transition: color 260ms ease, background 320ms ease, border-color 320ms ease, transform 400ms linear(0,0.101,0.318,0.559,0.768,0.922,1.019,1.067,1.081,1.073,1.056,1.037,1.019,1.007,0.999,1);
+  }
+  .chip:hover { color:#F2EDE4; border-color: color-mix(in srgb, var(--accent,#C9A46A) 50%, transparent); transform:translateY(-2px) scale(1.02); }
+  .chip:active { transform:scale(0.98); transition-duration:110ms; }
+  .chip:focus-visible { outline:2px solid var(--accent,#C9A46A); outline-offset:3px; }
+  .chip[data-on="1"] {
+    color:#161207; background:var(--accent,#C9A46A);
+    border-color:var(--accent,#C9A46A);
+  }
+  #contato .field:hover { border-color: color-mix(in srgb, var(--accent,#C9A46A) 40%, transparent); }
   * { box-sizing:border-box; }
-  a { color:#E8B563; text-decoration:none; }
-  a:hover { color:#F2CB8B; }
-  ::selection { background:#E8B563; color:#0a0b0d; }
-  image-slot { --slot-bg:#101215; }
+  a { color:var(--accent,#C9A46A); text-decoration:none; }
+  a:hover { color:#DFC08B; }
+  ::selection { background:var(--accent,#C9A46A); color:#0E1420; }
 
   @property --pos-x { syntax: '<percentage>'; initial-value: 11.14%; inherits: false; }
   @property --pos-y { syntax: '<percentage>'; initial-value: 140%; inherits: false; }
   @property --spread-x { syntax: '<percentage>'; initial-value: 150%; inherits: false; }
   @property --spread-y { syntax: '<percentage>'; initial-value: 180.06%; inherits: false; }
-  @property --color-1 { syntax: '<color>'; initial-value: #000; inherits: false; }
+  @property --color-1 { syntax: '<color>'; initial-value: #0b0f18; inherits: false; }
   @property --color-2 { syntax: '<color>'; initial-value: #1a1206; inherits: false; }
   @property --color-3 { syntax: '<color>'; initial-value: #4a3313; inherits: false; }
-  @property --color-4 { syntax: '<color>'; initial-value: #7a5620; inherits: false; }
-  @property --color-5 { syntax: '<color>'; initial-value: #a9762c; inherits: false; }
+  @property --color-4 { syntax: '<color>'; initial-value: #8a6a35; inherits: false; }
+  @property --color-5 { syntax: '<color>'; initial-value: #C9A46A; inherits: false; }
   @property --border-angle { syntax: '<angle>'; initial-value: 20deg; inherits: true; }
-  @property --border-color-1 { syntax: '<color>'; initial-value: hsla(38, 70%, 70%, 0.22); inherits: true; }
-  @property --border-color-2 { syntax: '<color>'; initial-value: hsla(38, 70%, 55%, 0.75); inherits: true; }
+  @property --border-color-1 { syntax: '<color>'; initial-value: hsla(38,70%,75%,0.22); inherits: true; }
+  @property --border-color-2 { syntax: '<color>'; initial-value: hsla(38,70%,55%,0.7); inherits: true; }
   @property --stop-1 { syntax: '<percentage>'; initial-value: 37.35%; inherits: false; }
   @property --stop-2 { syntax: '<percentage>'; initial-value: 61.36%; inherits: false; }
   @property --stop-3 { syntax: '<percentage>'; initial-value: 78.42%; inherits: false; }
   @property --stop-4 { syntax: '<percentage>'; initial-value: 89.52%; inherits: false; }
   @property --stop-5 { syntax: '<percentage>'; initial-value: 100%; inherits: false; }
 
-  .gradient-button {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 152px;
-    padding: 15px 34px;
-    border-radius: 11px;
-    border: 0;
-    appearance: none;
-    cursor: pointer;
-    font-family: 'Geomini','Manrope',sans-serif;
-    font-size: 14px;
-    line-height: 19px;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    color: #FFFFFF;
-    text-decoration: none;
+  .pill {
+    position:relative; display:inline-flex; align-items:center; justify-content:center; gap:12px;
+    padding:15px 30px; border-radius:999px; border:0; appearance:none; cursor:pointer;
+    font-family:'Geomini','Archivo',system-ui,sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.16em;
+    text-transform:uppercase; white-space:nowrap;
     background: radial-gradient(
       var(--spread-x) var(--spread-y) at var(--pos-x) var(--pos-y),
-      var(--color-1) var(--stop-1),
-      var(--color-2) var(--stop-2),
-      var(--color-3) var(--stop-3),
-      var(--color-4) var(--stop-4),
-      var(--color-5) var(--stop-5)
-    );
+      var(--color-1) var(--stop-1), var(--color-2) var(--stop-2), var(--color-3) var(--stop-3),
+      var(--color-4) var(--stop-4), var(--color-5) var(--stop-5));
     transition: --pos-x .5s, --pos-y .5s, --spread-x .5s, --spread-y .5s,
       --color-1 .5s, --color-2 .5s, --color-3 .5s, --color-4 .5s, --color-5 .5s,
       --border-angle .5s, --border-color-1 .5s, --border-color-2 .5s,
-      --stop-1 .5s, --stop-2 .5s, --stop-3 .5s, --stop-4 .5s, --stop-5 .5s;
+      --stop-1 .5s, --stop-2 .5s, --stop-3 .5s, --stop-4 .5s, --stop-5 .5s,
+      color .4s ease, transform .4s linear(0,0.101,0.318,0.559,0.768,0.922,1.019,1.067,1.081,1.073,1.056,1.037,1.019,1.007,0.999,1), filter .5s cubic-bezier(0.16,1,0.3,1), box-shadow .6s cubic-bezier(0.16,1,0.3,1);
   }
-  .gradient-button::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 1px;
+  .pill::before {
+    content:''; position:absolute; inset:0; border-radius:inherit; padding:1px;
     background: linear-gradient(var(--border-angle), var(--border-color-1), var(--border-color-2));
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask-composite: exclude;
-    -webkit-mask-composite: xor;
-    pointer-events: none;
+    mask-composite: exclude; -webkit-mask-composite: xor; pointer-events:none;
   }
-  .gradient-button:hover {
-    --pos-x: 0%;
-    --pos-y: 91.51%;
-    --spread-x: 120.24%;
-    --spread-y: 103.18%;
-    --color-1: #E8B563;
-    --color-2: #D89A45;
-    --color-3: #B8752A;
-    --color-4: #3a2409;
-    --color-5: #000;
-    --border-angle: 190deg;
-    --border-color-1: hsla(38, 78%, 90%, 0.15);
-    --border-color-2: hsla(38, 75%, 85%, 0.6);
-    --stop-1: 0%;
-    --stop-2: 8.8%;
-    --stop-3: 21.44%;
-    --stop-4: 71.34%;
-    --stop-5: 85.76%;
+  .pill:hover { transform:translateY(-2px) scale(1.02); filter:brightness(1.07); box-shadow:0 16px 34px rgba(0,0,0,0.38); }
+  .pill:active { transform:translateY(0) scale(0.98); filter:brightness(1); transition-duration:110ms; }
+  .pill:focus-visible { outline:2px solid var(--accent,#C9A46A); outline-offset:4px; }
+
+  .pill-gold {
+    color:#191204;
+    --pos-x:16%; --pos-y:0%; --spread-x:160%; --spread-y:190%;
+    --color-1: color-mix(in srgb, var(--accent,#C9A46A) 78%, #fff);
+    --color-2: color-mix(in srgb, var(--accent,#C9A46A) 92%, #fff);
+    --color-3: var(--accent,#C9A46A);
+    --color-4: color-mix(in srgb, var(--accent,#C9A46A) 92%, #000);
+    --color-5: color-mix(in srgb, var(--accent,#C9A46A) 84%, #000);
+    --stop-1:0%; --stop-2:22%; --stop-3:52%; --stop-4:82%; --stop-5:100%;
+    --border-color-1: color-mix(in srgb, #fff 60%, transparent);
+    --border-color-2: color-mix(in srgb, var(--accent,#C9A46A) 70%, #000);
   }
-  .gradient-button:focus-visible { outline: 2px solid #E8B563; outline-offset: 3px; }
-  .gradient-button { transform: translateZ(0); transition-property: --pos-x,--pos-y,--spread-x,--spread-y,--color-1,--color-2,--color-3,--color-4,--color-5,--border-angle,--border-color-1,--border-color-2,--stop-1,--stop-2,--stop-3,--stop-4,--stop-5,transform,box-shadow; }
-  .gradient-button:hover { transform: translateY(-2px) scale(1.02); box-shadow: 0 14px 34px rgba(0,0,0,0.5); }
-  .gradient-button:active { transform: translateY(0) scale(0.99); }
-
-  .nav-link { position: relative; }
-  .nav-link::after {
-    content: ''; position: absolute; left: 0; bottom: -7px; height: 1px; width: 100%;
-    background: #E8B563; transform: scaleX(0); transform-origin: right;
-    transition: transform 380ms cubic-bezier(0.22,1,0.36,1);
-  }
-  .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
-  .nav-link { display: inline-block; transition: opacity 220ms ease, color 220ms ease, transform 220ms cubic-bezier(0.22,1,0.36,1), text-shadow 220ms ease; }
-  .nav-link:hover { color: #F7E6C4 !important; opacity: 1 !important; transform: translateY(-1px); text-shadow: 0 0 18px rgba(232,181,99,0.45); }
-  .nav-link:active { transform: translateY(1px) scale(0.97); }
-  .nav-link.is-current { color: #E8B563 !important; opacity: 1 !important; }
-  .nav-link.is-current::after { transform: scaleX(1); transform-origin: left; }
-  .nav-link:focus-visible { outline: 2px solid #E8B563; outline-offset: 4px; border-radius: 3px; }
-  html { scroll-padding-top: 104px; }
-
-  .media-frame image-slot { display: block; width: 100%; height: 100%; transition: transform 1100ms cubic-bezier(0.16,1,0.3,1), filter 700ms ease; will-change: transform; }
-  .media-frame:hover image-slot { transform: scale(1.07); filter: saturate(1.1) brightness(1.05); }
-
-  .site-header { transition: background 420ms ease, backdrop-filter 420ms ease, border-color 420ms ease, padding 420ms ease; border-bottom: 1px solid transparent; }
-  .site-header.is-stuck { background: rgba(8,9,11,0.82); backdrop-filter: blur(16px); border-bottom-color: rgba(245,241,234,0.09); }
-
-  @keyframes mh-drift { from { transform: scale(1.02); } to { transform: scale(1.09); } }
-  .drift { animation: mh-drift 26s ease-in-out infinite alternate; }
-
-  @keyframes mh-pulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: .55; transform: scale(.82); } }
-  .dot-active { animation: mh-pulse 2.6s ease-in-out infinite; }
-  .dot { transition: background 300ms ease, transform 300ms ease; }
-  .dot:hover { transform: scale(1.5); background: #E8B563; }
-
-  .faq-item summary { list-style: none; cursor: pointer; }
-  .faq-item summary::-webkit-details-marker { display: none; }
-  .faq-item summary::after {
-    content: '+'; position: absolute; right: 0; top: 22px; font-size: 20px; line-height: 1;
-    color: #E8B563; transition: transform 380ms cubic-bezier(0.16,1,0.3,1);
-  }
-  .faq-item[open] summary::after { transform: rotate(45deg); }
-  .faq-item summary:hover { color: #F7E6C4; }
-  .faq-item summary:focus-visible { outline: 2px solid #E8B563; outline-offset: 4px; }
-  .faq-item[open] .faq-answer { animation: faq-open 520ms cubic-bezier(0.16,1,0.3,1) both; }
-  @keyframes faq-open { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: none; } }
-
-  .sticky-cta { display: none; }
-  @media (max-width: 760px) {
-    .sticky-cta {
-      display: flex; position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 60;
-      gap: 10px; align-items: center; justify-content: center;
-      animation: rise-cta 700ms cubic-bezier(0.16,1,0.3,1) 900ms both;
-    }
-    .sticky-cta .gradient-button { flex: 1; min-width: 0; padding: 16px 20px; }
-  }
-  @keyframes rise-cta { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
-
-  figure { transition: transform 480ms cubic-bezier(0.16,1,0.3,1), border-color 480ms ease; }
-  #avaliacoes figure:hover { transform: translateY(-4px); border-top-color: rgba(232,181,99,0.55); }
-  #imoveis [style*="border-bottom"]:hover { border-bottom-color: rgba(232,181,99,0.4); }
-
-  .row-link { transition: color 260ms ease, padding-left 320ms cubic-bezier(0.22,1,0.36,1); }
-  .row-link:hover { padding-left: 6px; }
-
-  .gradient-button-sm { min-width: 0; padding: 11px 22px; font-size: 12px; border-radius: 9px; white-space: nowrap; }
-
-  .pillar { transition: transform 480ms cubic-bezier(0.16,1,0.3,1), border-color 480ms ease, background 480ms ease, box-shadow 480ms ease; }
-  .pillar:hover {
-    transform: translateY(-6px);
-    border-color: rgba(232,181,99,0.4);
-    background: linear-gradient(180deg, rgba(232,181,99,0.07), rgba(245,241,234,0));
-    box-shadow: 0 22px 48px rgba(0,0,0,0.5);
+  .pill-gold:hover {
+    color:#191204;
+    --pos-x:0%; --pos-y:100%; --spread-x:130%; --spread-y:150%;
+    --color-1: color-mix(in srgb, var(--accent,#C9A46A) 96%, #fff);
+    --color-2: color-mix(in srgb, var(--accent,#C9A46A) 66%, #fff);
+    --color-3: color-mix(in srgb, var(--accent,#C9A46A) 86%, #fff);
+    --color-4: var(--accent,#C9A46A);
+    --color-5: color-mix(in srgb, var(--accent,#C9A46A) 88%, #000);
+    --stop-1:0%; --stop-2:24%; --stop-3:50%; --stop-4:78%; --stop-5:100%;
+    --border-angle:190deg;
+    --border-color-1: color-mix(in srgb, #fff 75%, transparent);
+    --border-color-2: color-mix(in srgb, var(--accent,#C9A46A) 90%, #fff);
+    box-shadow:0 16px 34px color-mix(in srgb, var(--accent,#C9A46A) 32%, transparent);
   }
 
-  a, .media-frame, article, image-slot { transition-timing-function: cubic-bezier(0.22,1,0.36,1); }
-  footer a { transition: color 240ms ease, letter-spacing 300ms cubic-bezier(0.22,1,0.36,1); }
-  footer a:hover { color: #F7E6C4; letter-spacing: 0.02em; }
-  .media-frame { transition: transform 420ms cubic-bezier(0.22,1,0.36,1), box-shadow 420ms ease; }
-  .media-frame:hover { transform: translateY(-6px); box-shadow: 0 26px 54px rgba(0,0,0,0.55); }
+  .pill-ghost-light {
+    color:#F2EDE4;
+    --pos-x:10%; --pos-y:130%; --spread-x:150%; --spread-y:180%;
+    --color-1:rgba(20,28,42,0.34); --color-2:rgba(17,25,38,0.30); --color-3:rgba(15,22,34,0.26); --color-4:rgba(13,20,31,0.22); --color-5:rgba(11,17,25,0.18);
+    --stop-1:0%; --stop-2:30%; --stop-3:58%; --stop-4:82%; --stop-5:100%;
+    --border-color-1: rgba(242,237,228,0.42);
+    --border-color-2: rgba(242,237,228,0.12);
+  }
+  .pill-ghost-light:hover {
+    color:#F7F3EA;
+    --pos-x:0%; --pos-y:95.51%; --spread-x:112%; --spread-y:110%;
+    --color-1: color-mix(in srgb, var(--accent,#C9A46A) 34%, rgba(15,22,34,0.4));
+    --color-2: color-mix(in srgb, var(--accent,#C9A46A) 18%, rgba(15,22,34,0.4));
+    --color-3:rgba(17,25,38,0.34); --color-4:rgba(13,20,31,0.28); --color-5:rgba(10,16,23,0.24);
+    --stop-1:0%; --stop-2:16%; --stop-3:44%; --stop-4:78%; --stop-5:100%;
+    --border-angle:210deg;
+    --border-color-1: color-mix(in srgb, var(--accent,#C9A46A) 25%, transparent);
+    --border-color-2: var(--accent,#C9A46A);
+  }
 
-  .gradient-button-variant {
-    --color-1: #000;
-    --color-2: #0d1014;
-    --color-3: #1d232b;
-    --color-4: #333c47;
-    --color-5: #55616f;
-    --border-angle: 200deg;
-    --border-color-1: hsla(210, 30%, 90%, 0.45);
-    --border-color-2: hsla(210, 20%, 90%, 0.12);
+  .pill-ghost-dark {
+    color:#141A28;
+    --pos-x:10%; --pos-y:130%; --spread-x:150%; --spread-y:180%;
+    --color-1:#E4E4DE; --color-2:#E1E1DA; --color-3:#DDDDD6; --color-4:#D9D9D1; --color-5:#D4D4CB;
+    --stop-1:0%; --stop-2:30%; --stop-3:58%; --stop-4:82%; --stop-5:100%;
+    --border-color-1: rgba(20,26,40,0.32);
+    --border-color-2: rgba(20,26,40,0.1);
   }
-  .gradient-button-variant:hover {
-    --pos-x: 0%;
-    --pos-y: 95.51%;
-    --spread-x: 110.24%;
-    --spread-y: 110.2%;
-    --color-1: #0a0b0d;
-    --color-2: #E8B563;
-    --color-3: #8a6a35;
-    --color-4: #23282f;
-    --color-5: #000;
-    --stop-1: 0%;
-    --stop-2: 10%;
-    --stop-3: 35.44%;
-    --stop-4: 71.34%;
-    --stop-5: 90.76%;
-    --border-angle: 210deg;
-    --border-color-1: hsla(38, 75%, 90%, 0.25);
-    --border-color-2: hsla(38, 50%, 90%, 0.7);
+  .pill-ghost-dark:hover {
+    color:#141A28;
+    --pos-x:0%; --pos-y:95.51%; --spread-x:112%; --spread-y:110%;
+    --color-1: color-mix(in srgb, var(--accent,#C9A46A) 34%, #E4E4DE);
+    --color-2: color-mix(in srgb, var(--accent,#C9A46A) 18%, #E4E4DE);
+    --color-3:#E1E1DA; --color-4:#DDDDD6; --color-5:#D6D6CD;
+    --stop-1:0%; --stop-2:16%; --stop-3:44%; --stop-4:78%; --stop-5:100%;
+    --border-angle:210deg;
+    --border-color-1: color-mix(in srgb, var(--accent-ink,#7A5F35) 30%, transparent);
+    --border-color-2: var(--accent-ink,#7A5F35);
   }
+
+  #selecao a:not(.pill) {
+    display:inline-block;
+    transition: color 300ms ease, transform 400ms linear(0,0.101,0.318,0.559,0.768,0.922,1.019,1.067,1.081,1.073,1.056,1.037,1.019,1.007,0.999,1), text-shadow 300ms ease;
+  }
+  #selecao a:not(.pill):hover {
+    color: color-mix(in srgb, var(--accent,#C9A46A) 70%, #fff);
+    transform: translateY(-2px) scale(1.02);
+    text-shadow: 0 0 18px color-mix(in srgb, var(--accent,#C9A46A) 40%, transparent);
+  }
+  #selecao a:not(.pill):active { transform:scale(0.98); transition-duration:110ms; }
+  .nav-a:active { transform:scale(0.98); transition-duration:110ms; }
+  footer a, #contato p a {
+    display:inline-block;
+    transition: color 280ms ease, transform 400ms linear(0,0.101,0.318,0.559,0.768,0.922,1.019,1.067,1.081,1.073,1.056,1.037,1.019,1.007,0.999,1);
+  }
+  footer a:hover { color:#F7F3EA; transform:translateY(-2px) scale(1.02); }
+  footer a:active { transform:scale(0.98); transition-duration:110ms; }
+  #contato p a:hover { color: color-mix(in srgb, var(--accent,#C9A46A) 70%, #fff); }
+  .nav-a { position:relative; display:inline-block; color:#E7E2D8; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; transition:color 240ms ease, transform 400ms linear(0,0.101,0.318,0.559,0.768,0.922,1.019,1.067,1.081,1.073,1.056,1.037,1.019,1.007,0.999,1); }
+  .nav-a::after { content:''; position:absolute; left:0; bottom:-7px; height:1px; width:100%; background:var(--accent,#C9A46A); transform:scaleX(0); transform-origin:right; transition:transform 420ms cubic-bezier(0.16,1,0.3,1); }
+  .nav-a:hover { color:#F7F3EA; transform:translateY(-2px) scale(1.02); }
+  .nav-a:hover::after { transform:scaleX(1); transform-origin:left; }
+
+  .prop { transition: transform 400ms linear(0,0.101,0.318,0.559,0.768,0.922,1.019,1.067,1.081,1.073,1.056,1.037,1.019,1.007,0.999,1), box-shadow 700ms cubic-bezier(0.16,1,0.3,1); }
+  .prop:hover { transform:translateY(-8px) scale(1.012); box-shadow:0 30px 60px rgba(0,0,0,0.5); }
+  .prop img { transition: transform 1200ms cubic-bezier(0.16,1,0.3,1); }
+  .prop:hover img { transform:scale(1.08); }
+
+
+  .field {
+    width:100%; padding:15px 18px; border-radius:10px; border:1px solid rgba(242,237,228,0.16);
+    background:rgba(242,237,228,0.05); color:#F2EDE4; font-family:'Geomini','Archivo',system-ui,sans-serif; font-size:14px;
+    transition: border-color 300ms ease, background 300ms ease;
+  }
+  .field::placeholder { color:rgba(242,237,228,0.42); }
+  .field:focus { outline:none; border-color:var(--accent,#C9A46A); background:rgba(242,237,228,0.08); }
+
+  @keyframes bob { from { transform: translateY(0); } to { transform: translateY(7px); } }
+  .bob { animation: bob 1.9s ease-in-out infinite alternate; }
 </style>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"RealEstateAgent","@id":"https://masterhouseimoveis.com.br/#organizacao",
-"name":"Imobiliária Master House","url":"https://masterhouseimoveis.com.br/",
-"image":"https://masterhouseimoveis.com.br/compartilhamento.jpg",
-"telephone":"+55-32-3017-2878","priceRange":"$$$",
-"areaServed":{"@type":"City","name":"Juiz de Fora","addressRegion":"MG","addressCountry":"BR"},
-"address":{"@type":"PostalAddress","streetAddress":"Av. Barão do Rio Branco, 1871 — Sl 908","addressLocality":"Juiz de Fora","addressRegion":"MG","postalCode":"36013-020","addressCountry":"BR"},
-"openingHoursSpecification":[
-{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},
-{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"13:00"}],
-"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","bestRating":"5","ratingCount":"3"},
-"review":[
-{"@type":"Review","author":{"@type":"Person","name":"Marina L."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Atendimento impecável e muito profissional do início ao fim."},
-{"@type":"Review","author":{"@type":"Person","name":"Roberto S."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Nos ajudaram a encontrar exatamente o que precisávamos com total discrição."},
-{"@type":"Review","author":{"@type":"Person","name":"Carlos M."},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"reviewBody":"Equipe extremamente qualificada e transparente em Juiz de Fora."}]}
-</script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
-{"@type":"Question","name":"Vocês trabalham só com imóveis de alto padrão?","acceptedAnswer":{"@type":"Answer","text":"Nosso foco é a curadoria de residências de alto padrão em Juiz de Fora e região. Avaliamos cada imóvel antes de apresentá-lo, então trabalhamos com um número limitado de negócios por vez."}},
-{"@type":"Question","name":"Em quanto tempo vocês respondem um contato?","acceptedAnswer":{"@type":"Answer","text":"Em até 24 horas, dentro do horário de atendimento: segunda a sexta das 9h às 18h e sábado das 9h às 13h."}},
-{"@type":"Question","name":"Preciso ir até o escritório para começar?","acceptedAnswer":{"@type":"Answer","text":"Não. O primeiro contato pode ser por telefone ou WhatsApp. A visita ao escritório no Centro, na Av. Barão do Rio Branco, acontece quando for conveniente para você."}},
-{"@type":"Question","name":"Como funciona a parte de documentação?","acceptedAnswer":{"@type":"Answer","text":"Conduzimos a análise documental do imóvel e das partes antes da proposta, acompanhamos a negociação e seguimos até a lavratura da escritura e o registro em cartório."}},
-{"@type":"Question","name":"Vocês também atendem quem quer vender?","acceptedAnswer":{"@type":"Answer","text":"Sim. Fazemos a avaliação do imóvel, definimos a estratégia de exposição — inclusive de forma reservada, sem anúncio público — e conduzimos a negociação com compradores qualificados."}}]}
-</script>
 </helmet>
 
-<div style="--accent: {{accent}}; --pad: {{sectionPad}}; background:#08090b; color:#F5F1EA; font-family:'Geomini','Manrope',system-ui,sans-serif; min-height:100vh; overflow-x:hidden; position:relative">
+<div id="root-v2" style="--accent: {{ accent }}; --accent-ink: {{ accentInk }}; --curve: {{ curve }}; background:#0E1420; color:#F2EDE4; font-family:'Geomini','Archivo',system-ui,sans-serif; position:relative; width:100%; overflow:hidden">
 
-  <header class="site-header" style="position:absolute; top:0; left:0; right:0; z-index:5; max-width:1280px; margin:0 auto; padding:26px 40px; display:flex; flex-wrap:wrap; align-items:center; gap:16px 32px">
-    <div style="font-family:'Geomini','Manrope',sans-serif; font-size:17px; letter-spacing:0.22em; font-weight:500; text-transform:uppercase; white-space:nowrap">Master House</div>
-    <nav style="display:flex; flex-wrap:wrap; gap:10px 26px; margin:0 auto; min-width:0; flex:1 1 auto; justify-content:center; font-size:12.5px; letter-spacing:0.08em; color:#F5F1EA; text-shadow:0 1px 12px rgba(0,0,0,0.65)">
-      <a href="#imoveis" class="nav-link" style="color:#F5F1EA; opacity:0.88; transition:opacity 200ms ease" style-hover="opacity:1">Imóveis</a>
-      <a href="#imoveis" class="nav-link" style="color:#F5F1EA; opacity:0.88; transition:opacity 200ms ease" style-hover="opacity:1">Portfólio</a>
-      <a href="#exclusivos" class="nav-link" style="color:#F5F1EA; opacity:0.88; transition:opacity 200ms ease" style-hover="opacity:1">Exclusivos</a>
-      <a href="#sobre" class="nav-link" style="color:#F5F1EA; opacity:0.88; transition:opacity 200ms ease" style-hover="opacity:1">Sobre</a>
-      <a href="#faq" class="nav-link" style="color:#F5F1EA; opacity:0.88; transition:opacity 200ms ease" style-hover="opacity:1">FAQ</a>
-      <a href="#contato" class="nav-link" style="color:#F5F1EA; opacity:0.88; transition:opacity 200ms ease" style-hover="opacity:1">Contato</a>
+  <header style="position:absolute; top:0; left:0; right:0; z-index:20; max-width:1320px; margin:0 auto; padding:28px 44px; display:flex; align-items:center; gap:18px 34px; flex-wrap:wrap">
+    <div style="font-family:'Geomini','Archivo',sans-serif; font-size:20px; letter-spacing:0.16em; text-transform:uppercase; color:#F7F3EA; white-space:nowrap; flex:0 0 auto">Master House</div>
+    <nav style="display:flex; flex-wrap:wrap; gap:8px 18px; margin-left:auto; min-width:0; flex:0 1 auto; justify-content:flex-end; align-items:center">
+      <a href="#sobre" class="nav-a">Sobre</a>
+      <a href="#selecao" class="nav-a">Seleção</a>
+      <a href="#porque" class="nav-a">Por que nós</a>
+      <a href="#confianca" class="nav-a">Confiança</a>
     </nav>
-    <div style="display:flex; align-items:center; gap:20px; flex:0 0 auto; margin-left:auto">
-      <span style="font-size:12.5px; letter-spacing:0.06em; color:#EDE7DD; white-space:nowrap; text-shadow:0 1px 12px rgba(0,0,0,0.65)">(32) 3017-2878</span>
-      <a href="#contato" class="gradient-button gradient-button-sm">Fale Conosco</a>
-    </div>
+    <a href="#contato" class="pill pill-gold" style="flex:0 0 auto; padding:13px 24px">Fale conosco</a>
   </header>
 
-  <section style="position:relative; width:100%; margin:0; padding:0">
-    <div style="position:relative; height:100vh; min-height:620px; overflow:hidden; background:#0a0b0d">
-      <video id="mh-hero-video" class="drift" aria-label="Casa de alto padrão com piscina iluminada ao anoitecer" autoPlay muted="{{ true }}" loop="{{ true }}" playsInline preload="auto" poster="uploads/watermarked_img_15436039749677228101.jpg" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center; filter:saturate(1.14) contrast(1.1) brightness(1.06)">
-        <source src="uploads/House_with_pool_and_lights_20260909141600.mp4" type="video/mp4">
-      </video>
-      <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(100deg,rgba(8,9,11,0.92) 0%,rgba(8,9,11,0.72) 30%,rgba(8,9,11,0.42) 52%,rgba(8,9,11,0.12) 70%,rgba(8,9,11,0) 82%)"></div>
-      <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,rgba(8,9,11,0.92) 0%,rgba(8,9,11,0.25) 22%,rgba(8,9,11,0) 46%),linear-gradient(180deg,rgba(8,9,11,0.55) 0%,rgba(8,9,11,0) 22%)"></div>
-      <div style="position:relative; height:100%; width:100%; max-width:1280px; margin:0 auto; display:flex; flex-direction:column; justify-content:center; padding:80px 40px 0; pointer-events:none">
-        <h1 id="hero-title" style="font-family:'Lexend Deca',sans-serif; font-weight:500; text-transform:uppercase; font-size:clamp(42px,5.9vw,84px); line-height:1.0; letter-spacing:0.005em; margin:0 0 14px; max-width:640px; text-shadow:0 2px 30px rgba(0,0,0,0.5)">O imóvel<br>dos seus<br>sonhos</h1>
-        <div id="hero-underline" style="position:relative; height:2px; width:0; max-width:300px; margin:0 0 26px; border-radius:2px; background:linear-gradient(90deg,rgba(232,181,99,0.15),#E8B563 55%,rgba(232,181,99,0.15))"></div>
-        <p data-hero style="font-size:14px; line-height:1.75; color:#F0EBE2; max-width:430px; margin:0 0 34px; text-wrap:pretty; text-shadow:0 1px 14px rgba(0,0,0,0.7)">Especialistas em realizar negócios seguros e encontrar a melhor localização para você e sua família em Juiz de Fora.</p>
-        <div data-hero style="display:flex; flex-wrap:wrap; gap:16px; pointer-events:auto">
-          <a href="#contato" class="gradient-button">Fale Conosco</a>
-          <a href="#imoveis" class="gradient-button gradient-button-variant">Ver Imóveis</a>
+  <section style="position:relative; width:100%; height:100vh; min-height:640px; overflow:hidden;">
+    <video id="v2-video" autoPlay muted="{{ true }}" loop="{{ true }}" playsInline preload="auto" poster="uploads/watermarked_img_15436039749677228101.jpg" aria-label="Residência de alto padrão com piscina iluminada ao anoitecer" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; filter:saturate(1.1) contrast(1.06)">
+      <source src="uploads/House_with_pool_and_lights_20260909141600.mp4" type="video/mp4">
+    </video>
+    <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(105deg,rgba(14,20,32,0.94) 0%,rgba(14,20,32,0.72) 32%,rgba(14,20,32,0.3) 58%,rgba(14,20,32,0.1) 78%)"></div>
+    <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,rgba(14,20,32,0.95) 2%,rgba(14,20,32,0.2) 26%,rgba(14,20,32,0) 50%),linear-gradient(180deg,rgba(14,20,32,0.6) 0%,rgba(14,20,32,0) 24%)"></div>
+
+    <div style="position:relative; height:100%; max-width:1320px; margin:0 auto; padding:0 44px; display:flex; flex-direction:column; justify-content:center; pointer-events:none">
+      <div data-rv style="font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:22px">Imobiliária Master House</div>
+      <h1 data-rv style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:clamp(36px,5.2vw,70px); line-height:1.06; margin:0 0 22px; max-width:660px; text-wrap:balance">O imóvel dos seus sonhos em Juiz de Fora</h1>
+      <p data-rv style="font-size:14.5px; line-height:1.8; color:#E7E2D8; max-width:430px; margin:0 0 38px; text-wrap:pretty">Especialistas em realizar negócios seguros e encontrar a melhor localização para você e sua família.</p>
+      <div data-rv style="display:flex; flex-wrap:wrap; gap:14px; pointer-events:auto">
+        <a href="#selecao" class="pill pill-gold">Ver a seleção</a>
+        <a href="#contato" class="pill pill-ghost-light">Falar com um consultor</a>
+      </div>
+    </div>
+
+    <div style="position:absolute; left:44px; bottom:56px; display:flex; align-items:center; gap:12px; font-size:10.5px; letter-spacing:0.24em; text-transform:uppercase; color:rgba(242,237,228,0.65)">
+      <span class="bob" style="display:block; width:1px; height:26px; background:linear-gradient(180deg,var(--accent,#C9A46A),color-mix(in srgb, var(--accent,#C9A46A) 0%, transparent))"></span>
+      Role para descobrir
+    </div>
+  </section>
+
+  <section style="max-width:1320px; margin:0 auto; padding:96px 44px">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:1px; background:rgba(242,237,228,0.13); border-top:1px solid rgba(242,237,228,0.14); border-bottom:1px solid rgba(242,237,228,0.14)">
+      <div data-rv class="reg" style="padding:26px 26px; background:#0E1420">
+        <div style="font-size:10.5px; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:9px">Onde estamos</div>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#C4CAD6">Av. Barão do Rio Branco, 1871 — sala 908<br>Centro, Juiz de Fora</p>
+      </div>
+      <div data-rv class="reg" style="padding:26px 26px; background:#0E1420">
+        <div style="font-size:10.5px; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:9px">O que dizem</div>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#C4CAD6">4,8 de 5 nas avaliações<br>de quem já fechou negócio</p>
+      </div>
+      <div data-rv class="reg" style="padding:26px 26px; background:#0E1420">
+        <div style="font-size:10.5px; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:9px">Como respondemos</div>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#C4CAD6">Toda mensagem tem retorno<br>em até 24 horas, por uma pessoa</p>
+      </div>
+      <div data-rv class="reg" style="padding:26px 26px; background:#0E1420">
+        <div style="font-size:10.5px; letter-spacing:0.22em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:9px">Antes da proposta</div>
+        <p style="margin:0; font-size:13.5px; line-height:1.7; color:#C4CAD6">Matrícula, IPTU e certidões<br>conferidos por nós</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" style="position:relative; background:#E4E4DE; color:#141A28; padding:118px 0">
+    <div style="max-width:1320px; margin:0 auto; padding:0 44px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:64px; align-items:center">
+      <div>
+        <div data-rv style="font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:var(--accent-ink,#7A5F35); margin-bottom:20px">Sobre nós</div>
+        <h2 data-rv style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:clamp(32px,4.2vw,52px); line-height:1.12; margin:0 0 22px; max-width:460px; text-wrap:balance">Poucos imóveis por vez, e a gente conhece cada um</h2>
+        <p data-rv style="font-size:14px; line-height:1.9; color:#4C5261; margin:0 0 34px; max-width:420px; text-wrap:pretty">Não temos um catálogo interminável, e isso é de propósito. Visitamos cada imóvel, conferimos a documentação e só então apresentamos. Da primeira visita à escritura, você fala sempre com a mesma pessoa.</p>
+        <a data-rv href="#porque" class="pill pill-ghost-dark">Como trabalhamos</a>
+      </div>
+      <div data-rv style="position:relative">
+        <div class="sobre-fig" style="position:relative; aspect-ratio:5/6; overflow:hidden; box-shadow:0 40px 80px rgba(20,26,40,0.18)">
+          <img src="uploads/watermarked_img_3641148552278892428.jpg" alt="Residência contemporânea em concreto e madeira com piscina sobre a mata, ao pôr do sol" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block">
         </div>
       </div>
     </div>
   </section>
 
-  <section id="imoveis" style="max-width:1280px; margin:0 auto; padding:var(--pad,148px) 40px 0">
-    <h2 data-reveal style="font-family:'Geomini','Manrope',sans-serif; font-weight:400; font-size:36px; letter-spacing:0.01em; margin:0 0 54px; max-width:620px; line-height:1.15; text-wrap:balance">Serviços de Curadoria para Clientes Exigentes</h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,232px),1fr)); gap:26px; align-items:start">
-
-      <article data-reveal class="media-frame" style="position:relative; height:340px; border-radius:10px; overflow:hidden; background:#101215; transition:transform 420ms cubic-bezier(0.22,1,0.36,1), box-shadow 420ms ease" style-hover="transform:translateY(-6px); box-shadow:0 24px 50px rgba(0,0,0,0.55)">
-        <image-slot id="mh-card-1" role="img" aria-label="Residência de alto padrão iluminada em encosta arborizada, com vale tomado por neblina ao entardecer" shape="rect" fit="cover" src="uploads/watermarked_img_9332071794912793657.jpg" placeholder="casa moderna, vista para a serra"></image-slot>
-        <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,rgba(8,9,11,0.9) 0%,rgba(8,9,11,0.1) 55%)"></div>
-        <div style="position:absolute; left:22px; right:22px; bottom:20px; pointer-events:none">
-          <h3 style="font-family:'Geomini','Manrope',sans-serif; font-weight:400; font-size:19px; margin:0 0 5px">Residência de Alto Padrão</h3>
-          <p style="font-size:12px; letter-spacing:0.03em; color:rgba(245,241,234,0.58); margin:0">Arquitetura autoral, longe do barulho</p>
-        </div>
-      </article>
-
-      <article data-reveal class="media-frame" style="position:relative; height:340px; border-radius:10px; overflow:hidden; background:#101215; transition:transform 420ms cubic-bezier(0.22,1,0.36,1), box-shadow 420ms ease" style-hover="transform:translateY(-6px); box-shadow:0 24px 50px rgba(0,0,0,0.55)">
-        <image-slot id="mh-card-2" role="img" aria-label="Cobertura com varanda ampla, piscina e vista para as montanhas e as luzes da cidade ao anoitecer" shape="rect" fit="cover" src="uploads/8fd30dc2-296a-4623-ae8f-e43c3c4da3e9.jpeg" placeholder="cobertura ao entardecer, varanda ampla"></image-slot>
-        <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,rgba(8,9,11,0.9) 0%,rgba(8,9,11,0.1) 55%)"></div>
-        <div style="position:absolute; left:22px; right:22px; bottom:20px; pointer-events:none">
-          <h3 style="font-family:'Geomini','Manrope',sans-serif; font-weight:400; font-size:19px; margin:0 0 5px">Projeto Exclusivo</h3>
-          <p style="font-size:12px; letter-spacing:0.03em; color:rgba(245,241,234,0.58); margin:0">Poucos, escolhidos com critério</p>
-        </div>
-      </article>
-
-      <div data-reveal style="padding-top:4px">
-        <div style="font-size:10.5px; letter-spacing:0.26em; text-transform:uppercase; color:var(--accent,#E8B563); margin-bottom:14px">Curadoria Imobiliária</div>
-        <h3 style="font-family:'Geomini','Manrope',sans-serif; font-weight:400; font-size:28px; margin:0 0 14px">Como trabalhamos</h3>
-        <p style="font-size:13px; line-height:1.7; color:rgba(245,241,234,0.55); margin:0 0 26px; max-width:390px; text-wrap:pretty">Um processo conduzido com calma e reserva, do primeiro café até a entrega das chaves.</p>
+  <section id="selecao" style="position:relative; background:#0E1420; padding:118px 0">
+    <div style="max-width:1320px; margin:0 auto; padding:0 44px">
+      <div style="display:flex; align-items:flex-end; justify-content:space-between; gap:28px; flex-wrap:wrap; margin-bottom:52px">
         <div>
-          <div style="display:flex; justify-content:space-between; align-items:center; gap:20px; padding:13px 0; border-bottom:1px solid rgba(245,241,234,0.16); font-size:12.5px">
-            <span style="color:rgba(245,241,234,0.9)">Curadoria</span>
-            <span style="color:rgba(245,241,234,0.55); text-align:right">Seleção sob medida</span>
+          <div data-rv style="font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:18px">Seleção</div>
+          <h2 data-rv style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:clamp(30px,4vw,50px); line-height:1.12; margin:0; max-width:520px; text-wrap:balance">O que estamos apresentando agora</h2>
+        </div>
+        <a data-rv href="#contato" style="font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent,#C9A46A); white-space:nowrap">Ver tudo com um consultor</a>
+      </div>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,178px),1fr)); gap:22px">
+        <article data-rv class="prop" style="position:relative; border-radius:16px; overflow:hidden; background:#151d2c">
+          <div style="position:relative; aspect-ratio:3/4; overflow:hidden">
+            <img src="uploads/watermarked_img_9332071794912793657.jpg" alt="Casa iluminada em encosta arborizada com vale tomado por neblina ao entardecer" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block">
+            <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,rgba(14,20,32,0.92) 4%,rgba(14,20,32,0.1) 52%)"></div>
+            <div style="position:absolute; left:20px; right:20px; bottom:18px; pointer-events:none">
+              <div style="font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:7px">Serra</div>
+              <h3 style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:22px; margin:0; line-height:1.2">Casa na encosta</h3>
+            </div>
           </div>
-          <div style="display:flex; justify-content:space-between; align-items:center; gap:20px; padding:13px 0; border-bottom:1px solid rgba(245,241,234,0.08); font-size:12.5px">
-            <span style="color:rgba(245,241,234,0.9)">Avaliação</span>
-            <span style="color:rgba(245,241,234,0.55); text-align:right">Leitura de mercado</span>
+          <p style="font-size:12.5px; line-height:1.7; color:#9AA1AF; margin:0; padding:16px 20px 20px">Projeto autoral, longe do barulho, com o vale inteiro na janela.</p>
+        </article>
+
+        <article data-rv class="prop" style="position:relative; border-radius:16px; overflow:hidden; background:#151d2c">
+          <div style="position:relative; aspect-ratio:3/4; overflow:hidden">
+            <img src="uploads/8fd30dc2-296a-4623-ae8f-e43c3c4da3e9.jpeg" alt="Cobertura com varanda ampla, piscina e vista para as montanhas e as luzes da cidade" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block">
+            <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,rgba(14,20,32,0.92) 4%,rgba(14,20,32,0.1) 52%)"></div>
+            <div style="position:absolute; left:20px; right:20px; bottom:18px; pointer-events:none">
+              <div style="font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:7px">Alto da cidade</div>
+              <h3 style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:22px; margin:0; line-height:1.2">Cobertura duplex</h3>
+            </div>
           </div>
-          <div style="display:flex; justify-content:space-between; align-items:center; gap:20px; padding:13px 0; border-bottom:1px solid rgba(245,241,234,0.08); font-size:12.5px">
-            <span style="color:rgba(245,241,234,0.9)">Negociação</span>
-            <span style="color:rgba(245,241,234,0.55); text-align:right">Condução discreta</span>
+          <p style="font-size:12.5px; line-height:1.7; color:#9AA1AF; margin:0; padding:16px 20px 20px">Terraço virado para o pôr do sol e para as luzes da cidade.</p>
+        </article>
+
+        <article data-rv class="prop" style="position:relative; border-radius:16px; overflow:hidden; background:#151d2c">
+          <div style="position:relative; aspect-ratio:3/4; overflow:hidden">
+            <img src="uploads/watermarked_img_3641148552278892428.jpg" alt="Residência com piscina de borda infinita e mata ao redor no fim da tarde" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block">
+            <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,rgba(14,20,32,0.92) 4%,rgba(14,20,32,0.1) 52%)"></div>
+            <div style="position:absolute; left:20px; right:20px; bottom:18px; pointer-events:none">
+              <div style="font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:7px">Mata nativa</div>
+              <h3 style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:22px; margin:0; line-height:1.2">Casa com piscina</h3>
+            </div>
           </div>
-          <div style="display:flex; justify-content:space-between; align-items:center; gap:20px; padding:13px 0; border-bottom:1px solid rgba(245,241,234,0.08); font-size:12.5px">
-            <span style="color:rgba(245,241,234,0.9)">Documentação</span>
-            <span style="color:rgba(245,241,234,0.55); text-align:right">Segurança jurídica</span>
+          <p style="font-size:12.5px; line-height:1.7; color:#9AA1AF; margin:0; padding:16px 20px 20px">Sem anúncio público. Apresentada só a quem já conversou com a gente.</p>
+        </article>
+
+        <article data-rv class="prop" style="position:relative; border-radius:16px; overflow:hidden; background:#151d2c">
+          <div style="position:relative; aspect-ratio:3/4; overflow:hidden">
+            <img src="uploads/watermarked_img_15436039749677228101.jpg" alt="Casa moderna com piscina de borda infinita cercada por palmeiras ao anoitecer" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block">
+            <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,rgba(14,20,32,0.92) 4%,rgba(14,20,32,0.1) 52%)"></div>
+            <div style="position:absolute; left:20px; right:20px; bottom:18px; pointer-events:none">
+              <div style="font-size:9.5px; letter-spacing:0.2em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:7px">Condomínio fechado</div>
+              <h3 style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:22px; margin:0; line-height:1.2">Casa térrea</h3>
+            </div>
           </div>
-          <div style="display:flex; justify-content:space-between; align-items:center; gap:20px; padding:13px 0; font-size:12.5px">
-            <span style="color:rgba(245,241,234,0.9)">Acompanhamento</span>
-            <span style="color:var(--accent,#E8B563); text-align:right">Da visita à escritura</span>
-          </div>
+          <p style="font-size:12.5px; line-height:1.7; color:#9AA1AF; margin:0; padding:16px 20px 20px">Área de lazer integrada, feita para domingo com a casa cheia.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="porque" style="position:relative; background:#E4E4DE; color:#141A28; padding:118px 0">
+    <div style="max-width:1320px; margin:0 auto; padding:0 44px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:64px; align-items:center">
+      <div>
+        <div data-rv style="font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:var(--accent-ink,#7A5F35); margin-bottom:20px">Por que nos escolhem</div>
+        <h2 data-rv style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:clamp(30px,4vw,50px); line-height:1.12; margin:0 0 18px; max-width:420px; text-wrap:balance">Comprar bem é ter alguém do seu lado na mesa</h2>
+        <p data-rv style="font-size:14px; line-height:1.9; color:#4C5261; margin:0; max-width:400px; text-wrap:pretty">Uma casa é uma decisão de anos, não de uma tarde. A gente conduz com calma, reserva e informação na mão.</p>
+      </div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr)); gap:32px 26px">
+        <div data-rv>
+          <span style="display:block; width:34px; height:1px; background:var(--accent-ink,#7A5F35); margin-bottom:18px"></span>
+                    <h3 style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:20px; margin:0 0 8px">Atendimento sob medida</h3>
+          <p style="font-size:12.5px; line-height:1.75; color:#5A6172; margin:0">Só mostramos o que combina com você. Sábado inteiro vendo casa errada, não.</p>
+        </div>
+        <div data-rv>
+          <span style="display:block; width:34px; height:1px; background:var(--accent-ink,#7A5F35); margin-bottom:18px"></span>
+                    <h3 style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:20px; margin:0 0 8px">Discrição total</h3>
+          <p style="font-size:12.5px; line-height:1.75; color:#5A6172; margin:0">Quem vende nem sempre quer anunciar. Conduzimos a negociação em sigilo.</p>
+        </div>
+        <div data-rv>
+          <span style="display:block; width:34px; height:1px; background:var(--accent-ink,#7A5F35); margin-bottom:18px"></span>
+                    <h3 style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:20px; margin:0 0 8px">Segurança jurídica</h3>
+          <p style="font-size:12.5px; line-height:1.75; color:#5A6172; margin:0">Matrícula e certidões na mesa antes da proposta, e acompanhamento até o registro.</p>
+        </div>
+        <div data-rv>
+          <span style="display:block; width:34px; height:1px; background:var(--accent-ink,#7A5F35); margin-bottom:18px"></span>
+                    <h3 style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:20px; margin:0 0 8px">Conhecimento local</h3>
+          <p style="font-size:12.5px; line-height:1.75; color:#5A6172; margin:0">Sabemos o que vale cada rua daqui, e falamos isso na sua frente.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="exclusivos" style="max-width:1280px; margin:0 auto; padding:var(--pad,148px) 40px 0">
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:66px; align-items:center">
-      <div data-reveal>
-        <h2 style="font-family:'Geomini','Manrope',sans-serif; font-weight:400; font-size:clamp(32px,3.4vw,46px); line-height:1.12; margin:0 0 20px; text-wrap:balance">Imóveis exclusivos para quem exige o melhor</h2>
-        <p style="font-size:13.5px; line-height:1.8; color:rgba(245,241,234,0.55); margin:0 0 32px; max-width:400px; text-wrap:pretty">Acompanhamos cada etapa — da visita à escritura — com discrição e o cuidado que um patrimônio dessa ordem pede.</p>
-        <a href="#contato" class="gradient-button gradient-button-variant">Nossos Serviços</a>
+  <section id="confianca" style="position:relative; background:#0E1420; padding:118px 0 178px; overflow:hidden">
+    <div style="position:absolute; inset:0; opacity:0.3">
+      <img src="uploads/watermarked_img_15436039749677228101.jpg" alt="Vista noturna de residência de alto padrão iluminada" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block">
+    </div>
+    <div style="position:absolute; inset:0; background:linear-gradient(90deg,#0E1420 18%,rgba(14,20,32,0.82) 52%,rgba(14,20,32,0.55) 100%)"></div>
+    <div style="position:relative; max-width:1320px; margin:0 auto; padding:0 44px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:60px; align-items:center">
+      <div>
+        <div data-rv style="font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:20px">Confiança</div>
+        <h2 data-rv style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:clamp(30px,4vw,50px); line-height:1.12; margin:0 0 20px; max-width:420px; text-wrap:balance">Quem já comprou com a gente conta melhor</h2>
+        <p data-rv style="font-size:14px; line-height:1.9; color:#C4CAD6; margin:0 0 34px; max-width:390px; text-wrap:pretty">Nossa reputação não vem de anúncio. Vem de quem passou pelo processo inteiro e depois indicou a gente para um amigo.</p>
+        <a data-rv href="#contato" class="pill pill-gold">Falar com a equipe</a>
       </div>
-      <div data-reveal class="media-frame" style="position:relative; height:420px; border-radius:12px; overflow:hidden; background:#101215">
-        <image-slot id="mh-exclusive" role="img" aria-label="Residência contemporânea em concreto e madeira com piscina de borda infinita sobre a mata, ao pôr do sol" shape="rect" fit="cover" src="uploads/watermarked_img_3641148552278892428.jpg" placeholder="residência com piscina, fim de tarde, horizontal"></image-slot>
-        <div style="position:absolute; inset:0; pointer-events:none; background:linear-gradient(0deg,rgba(8,9,11,0.7) 0%,rgba(8,9,11,0) 42%)"></div>
-        <div style="position:absolute; left:24px; bottom:20px; pointer-events:none">
-          <div style="font-size:10.5px; letter-spacing:0.26em; text-transform:uppercase; color:var(--accent,#E8B563); margin-bottom:6px">Área de Lazer</div>
-          <p style="font-size:12px; letter-spacing:0.03em; color:rgba(245,241,234,0.6); margin:0">Feitos para receber quem você gosta</p>
+      <div data-rv style="border-radius:20px; border:1px solid rgba(242,237,228,0.12); background:rgba(14,20,32,0.72); backdrop-filter:blur(8px); padding:38px 34px">
+        <div style="display:flex; align-items:baseline; gap:12px; margin-bottom:8px">
+          <span style="font-family:'Geomini','Archivo',sans-serif; font-size:56px; line-height:1; color:var(--accent,#C9A46A)">4,8</span>
+          <span style="font-size:13px; letter-spacing:0.18em; color:var(--accent,#C9A46A)">★★★★★</span>
+        </div>
+        <p style="font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:#9AA1AF; margin:0 0 30px">Média das avaliações de clientes</p>
+        <figure style="margin:0 0 22px; padding-bottom:22px; border-bottom:1px solid rgba(242,237,228,0.1)">
+          <blockquote style="margin:0 0 10px; font-family:'Geomini','Archivo',sans-serif; font-size:19px; line-height:1.5; color:#F2EDE4">“Atendimento impecável e muito profissional do início ao fim.”</blockquote>
+          <figcaption style="font-size:11.5px; letter-spacing:0.08em; color:#9AA1AF">Marina L.</figcaption>
+        </figure>
+        <figure style="margin:0 0 22px; padding-bottom:22px; border-bottom:1px solid rgba(242,237,228,0.1)">
+          <blockquote style="margin:0 0 10px; font-family:'Geomini','Archivo',sans-serif; font-size:19px; line-height:1.5; color:#F2EDE4">“Nos ajudaram a encontrar exatamente o que precisávamos com total discrição.”</blockquote>
+          <figcaption style="font-size:11.5px; letter-spacing:0.08em; color:#9AA1AF">Roberto S.</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <blockquote style="margin:0 0 10px; font-family:'Geomini','Archivo',sans-serif; font-size:19px; line-height:1.5; color:#F2EDE4">“Equipe extremamente qualificada e transparente em Juiz de Fora.”</blockquote>
+          <figcaption style="font-size:11.5px; letter-spacing:0.08em; color:#9AA1AF">Carlos M.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" style="position:relative; max-width:1320px; margin:0 auto; padding:0 44px; transform:translateY(-70px)">
+    <div data-rv style="border-radius:26px; background:linear-gradient(140deg,#182031,#10161f); border:1px solid rgba(242,237,228,0.1); box-shadow:0 50px 90px rgba(0,0,0,0.5); padding:56px 48px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:52px; align-items:start">
+      <div>
+        <div style="font-size:11px; letter-spacing:0.28em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:18px">Sem formulário</div>
+        <h2 style="font-family:'Geomini','Archivo',sans-serif; font-weight:400; font-size:clamp(28px,3.4vw,44px); line-height:1.14; margin:0 0 22px; max-width:400px; text-wrap:balance">Quem começa a conversa é você</h2>
+        <p style="font-size:14px; line-height:1.85; color:#C4CAD6; margin:0 0 28px; max-width:390px; text-wrap:pretty">Não pedimos seu telefone para ligar depois. Monte a mensagem aqui, abra o WhatsApp e escreva do jeito que quiser — você continua com o controle da conversa.</p>
+        <ul style="list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:12px">
+          <li style="display:flex; gap:14px; align-items:baseline; font-size:13.5px; color:#C4CAD6"><span style="flex:0 0 18px; height:1px; background:var(--accent,#C9A46A); transform:translateY(-4px)"></span>Nenhum dado seu fica com a gente</li>
+          <li style="display:flex; gap:14px; align-items:baseline; font-size:13.5px; color:#C4CAD6"><span style="flex:0 0 18px; height:1px; background:var(--accent,#C9A46A); transform:translateY(-4px)"></span>Cai direto no celular de quem atende</li>
+          <li style="display:flex; gap:14px; align-items:baseline; font-size:13.5px; color:#C4CAD6"><span style="flex:0 0 18px; height:1px; background:var(--accent,#C9A46A); transform:translateY(-4px)"></span>Resposta em até 24 horas, por uma pessoa</li>
+        </ul>
+      </div>
+
+      <div>
+        <div style="font-size:10.5px; letter-spacing:0.22em; text-transform:uppercase; color:#8891A0; margin-bottom:13px">Sobre o que você quer falar</div>
+        <div style="display:flex; flex-wrap:wrap; gap:9px; margin-bottom:26px">
+          <button type="button" class="chip" data-on="{{ aComprar }}" onClick="{{ pickAssunto }}" value="Comprar">Comprar</button>
+          <button type="button" class="chip" data-on="{{ aVender }}" onClick="{{ pickAssunto }}" value="Vender">Vender</button>
+          <button type="button" class="chip" data-on="{{ aAvaliar }}" onClick="{{ pickAssunto }}" value="Avaliar meu imóvel">Avaliar meu imóvel</button>
+          <button type="button" class="chip" data-on="{{ aDuvida }}" onClick="{{ pickAssunto }}" value="Só tirar uma dúvida">Só tirar uma dúvida</button>
+        </div>
+
+        <div style="font-size:10.5px; letter-spacing:0.22em; text-transform:uppercase; color:#8891A0; margin-bottom:13px">Alguma região em mente</div>
+        <div style="display:flex; flex-wrap:wrap; gap:9px; margin-bottom:26px">
+          <button type="button" class="chip" data-on="{{ bCentro }}" onClick="{{ pickBairro }}" value="Centro">Centro</button>
+          <button type="button" class="chip" data-on="{{ bAltoPassos }}" onClick="{{ pickBairro }}" value="Alto dos Passos">Alto dos Passos</button>
+          <button type="button" class="chip" data-on="{{ bBomPastor }}" onClick="{{ pickBairro }}" value="Bom Pastor">Bom Pastor</button>
+          <button type="button" class="chip" data-on="{{ bCascatinha }}" onClick="{{ pickBairro }}" value="Cascatinha">Cascatinha</button>
+          <button type="button" class="chip" data-on="{{ bGranbery }}" onClick="{{ pickBairro }}" value="Granbery">Granbery</button>
+          <button type="button" class="chip" data-on="{{ bNaoSei }}" onClick="{{ pickBairro }}" value="Ainda não sei">Ainda não sei</button>
+        </div>
+
+        <div style="border-radius:14px; border:1px solid rgba(242,237,228,0.12); background:rgba(242,237,228,0.04); padding:18px 20px; margin-bottom:16px">
+          <div style="font-size:10px; letter-spacing:0.2em; text-transform:uppercase; color:#8891A0; margin-bottom:9px">Sua mensagem</div>
+          <p style="margin:0; font-size:14px; line-height:1.65; color:#F2EDE4">{{ mensagem }}</p>
+        </div>
+
+        <button type="button" class="pill pill-gold" style="justify-content:center; width:100%; padding:17px 30px; cursor:pointer" onClick="{{ abrirWhatsApp }}">Abrir conversa no WhatsApp</button>
+        <p style="font-size:11px; line-height:1.7; color:#8891A0; margin:12px 0 0">Você pode editar tudo antes de enviar.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer style="max-width:1320px; margin:0 auto; padding:0 44px 48px">
+    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,168px),1fr)); gap:36px 28px; border-top:1px solid rgba(242,237,228,0.1); padding-top:52px">
+      <div data-rv>
+        <div style="font-family:'Geomini','Archivo',sans-serif; font-size:19px; letter-spacing:0.2em; text-transform:uppercase; margin-bottom:14px">Master House</div>
+        <p style="font-size:12.5px; line-height:1.8; color:#9AA1AF; margin:0">Ajudamos famílias de Juiz de Fora a escolher o lugar onde vão viver os próximos anos.</p>
+      </div>
+      <div data-rv>
+        <div style="font-size:10.5px; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:14px">Endereço</div>
+        <p style="font-size:12.5px; line-height:1.8; color:#C4CAD6; margin:0">Av. Barão do Rio Branco, 1871 — Sl 908<br>Centro, Juiz de Fora — MG<br>36013-020</p>
+      </div>
+      <div data-rv>
+        <div style="font-size:10.5px; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:14px">Contato</div>
+        <div style="display:flex; flex-direction:column; gap:9px; font-size:12.5px">
+          <a href="tel:+553230172878" style="color:#C4CAD6">(32) 3017-2878</a>
+          <a href="https://wa.me/553230172878" target="_blank" rel="noopener" style="color:#C4CAD6">WhatsApp</a>
+          <a href="https://masterhouseimoveis.com.br" target="_blank" rel="noopener" style="color:#C4CAD6">masterhouseimoveis.com.br</a>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="diferenciais" style="max-width:1280px; margin:0 auto; padding:var(--pad,148px) 40px 0">
-    <div style="font-size:10.5px; letter-spacing:0.26em; text-transform:uppercase; color:var(--accent,#E8B563); margin-bottom:16px">Diferenciais</div>
-    <h2 style="font-weight:400; font-size:36px; letter-spacing:0.01em; margin:0 0 56px; max-width:620px; line-height:1.15; text-wrap:balance">Por que escolher a Master House</h2>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,224px),1fr)); gap:28px">
-      <article class="pillar" style="border:1px solid rgba(245,241,234,0.12); border-radius:10px; padding:34px 30px 36px; background:linear-gradient(180deg,rgba(245,241,234,0.03),rgba(245,241,234,0))">
-        <div style="font-size:11px; letter-spacing:0.24em; color:var(--accent,#E8B563); margin-bottom:26px">01</div>
-        <h3 style="font-weight:400; font-size:22px; margin:0 0 12px; line-height:1.25">Atendimento sob medida</h3>
-        <p style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0; text-wrap:pretty">Curadoria de imóveis alinhada exatamente ao seu estilo de vida e objetivos patrimoniais, sem perda de tempo.</p>
-      </article>
-      <article class="pillar" style="border:1px solid rgba(245,241,234,0.12); border-radius:10px; padding:34px 30px 36px; background:linear-gradient(180deg,rgba(245,241,234,0.03),rgba(245,241,234,0))">
-        <div style="font-size:11px; letter-spacing:0.24em; color:var(--accent,#E8B563); margin-bottom:26px">02</div>
-        <h3 style="font-weight:400; font-size:22px; margin:0 0 12px; line-height:1.25">Discrição e privacidade</h3>
-        <p style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0; text-wrap:pretty">Negociações conduzidas com absoluto sigilo e segurança para proteger a privacidade de compradores e vendedores.</p>
-      </article>
-      <article class="pillar" style="border:1px solid rgba(245,241,234,0.12); border-radius:10px; padding:34px 30px 36px; background:linear-gradient(180deg,rgba(245,241,234,0.03),rgba(245,241,234,0))">
-        <div style="font-size:11px; letter-spacing:0.24em; color:var(--accent,#E8B563); margin-bottom:26px">03</div>
-        <h3 style="font-weight:400; font-size:22px; margin:0 0 12px; line-height:1.25">Expertise local</h3>
-        <p style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0; text-wrap:pretty">Profundo conhecimento dos endereços mais desejados de Juiz de Fora, garantindo avaliações justas e oportunidades exclusivas.</p>
-      </article>
-    </div>
-  </section>
-
-  <section id="avaliacoes" style="max-width:1280px; margin:0 auto; padding:var(--pad,148px) 40px 0">
-    <div style="display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; margin-bottom:54px">
-      <h2 style="font-weight:400; font-size:36px; letter-spacing:0.01em; margin:0">O que dizem os clientes</h2>
-      <div style="display:flex; align-items:baseline; gap:9px">
-        <span style="font-size:26px; line-height:1; color:var(--accent,#E8B563)">4,8</span>
-        <span style="font-family:'Manrope',system-ui,sans-serif; font-size:12px; letter-spacing:0.16em; color:var(--accent,#E8B563)">★★★★★</span>
+      <div data-rv>
+        <div style="font-size:10.5px; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent,#C9A46A); margin-bottom:14px">Atendimento</div>
+        <p style="font-size:12.5px; line-height:1.8; color:#C4CAD6; margin:0">Seg a sex · 09h às 18h<br>Sábado · 09h às 13h<br>Resposta em até 24h</p>
       </div>
     </div>
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,224px),1fr)); gap:30px">
-      <figure style="margin:0; border-top:1px solid rgba(245,241,234,0.16); padding-top:22px">
-        <blockquote style="margin:0 0 16px; font-size:16px; line-height:1.6; color:#F0EBE2">“Atendimento impecável e muito profissional do início ao fim.”</blockquote>
-        <figcaption style="font-size:12px; letter-spacing:0.06em; color:#A8A39A">Marina L. · <span style="font-family:'Manrope',system-ui,sans-serif; color:var(--accent,#E8B563)">★★★★★</span></figcaption>
-      </figure>
-      <figure style="margin:0; border-top:1px solid rgba(245,241,234,0.16); padding-top:22px">
-        <blockquote style="margin:0 0 16px; font-size:16px; line-height:1.6; color:#F0EBE2">“Nos ajudaram a encontrar exatamente o que precisávamos com total discrição.”</blockquote>
-        <figcaption style="font-size:12px; letter-spacing:0.06em; color:#A8A39A">Roberto S. · <span style="font-family:'Manrope',system-ui,sans-serif; color:var(--accent,#E8B563)">★★★★★</span></figcaption>
-      </figure>
-      <figure style="margin:0; border-top:1px solid rgba(245,241,234,0.16); padding-top:22px">
-        <blockquote style="margin:0 0 16px; font-size:16px; line-height:1.6; color:#F0EBE2">“Equipe extremamente qualificada e transparente em Juiz de Fora.”</blockquote>
-        <figcaption style="font-size:12px; letter-spacing:0.06em; color:#A8A39A">Carlos M. · <span style="font-family:'Manrope',system-ui,sans-serif; color:var(--accent,#E8B563)">★★★★★</span></figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section id="faq" style="max-width:1280px; margin:0 auto; padding:var(--pad,148px) 40px 0">
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:64px; align-items:start">
-      <div>
-        <h2 style="font-weight:400; font-size:36px; letter-spacing:0.01em; margin:0 0 16px; line-height:1.15">Perguntas frequentes</h2>
-        <p style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0 0 26px; max-width:340px; text-wrap:pretty">Ficou alguma dúvida? Chame no WhatsApp — a gente responde em até 24 horas.</p>
-        <a href="https://wa.me/553230172878" target="_blank" rel="noopener" class="gradient-button">Falar no WhatsApp</a>
-      </div>
-      <div>
-        <details class="faq-item" style="position:relative; border-bottom:1px solid rgba(245,241,234,0.12)">
-          <summary style="position:relative; padding:22px 40px 22px 0; font-size:15px; line-height:1.4; color:#F5F1EA; transition:color 240ms ease">Vocês trabalham só com imóveis de alto padrão?</summary>
-          <p class="faq-answer" style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0 40px 24px 0">Nosso foco é a curadoria de residências de alto padrão em Juiz de Fora e região. Avaliamos cada imóvel antes de apresentá-lo, então trabalhamos com um número limitado de negócios por vez.</p>
-        </details>
-        <details class="faq-item" style="position:relative; border-bottom:1px solid rgba(245,241,234,0.12)">
-          <summary style="position:relative; padding:22px 40px 22px 0; font-size:15px; line-height:1.4; color:#F5F1EA; transition:color 240ms ease">Em quanto tempo vocês respondem um contato?</summary>
-          <p class="faq-answer" style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0 40px 24px 0">Em até 24 horas, dentro do horário de atendimento: segunda a sexta das 9h às 18h e sábado das 9h às 13h.</p>
-        </details>
-        <details class="faq-item" style="position:relative; border-bottom:1px solid rgba(245,241,234,0.12)">
-          <summary style="position:relative; padding:22px 40px 22px 0; font-size:15px; line-height:1.4; color:#F5F1EA; transition:color 240ms ease">Preciso ir até o escritório para começar?</summary>
-          <p class="faq-answer" style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0 40px 24px 0">Não. O primeiro contato pode ser por telefone ou WhatsApp. A visita ao escritório no Centro, na Av. Barão do Rio Branco, acontece quando for conveniente para você.</p>
-        </details>
-        <details class="faq-item" style="position:relative; border-bottom:1px solid rgba(245,241,234,0.12)">
-          <summary style="position:relative; padding:22px 40px 22px 0; font-size:15px; line-height:1.4; color:#F5F1EA; transition:color 240ms ease">Como funciona a parte de documentação?</summary>
-          <p class="faq-answer" style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0 40px 24px 0">Conduzimos a análise documental do imóvel e das partes antes da proposta, acompanhamos a negociação e seguimos até a lavratura da escritura e o registro em cartório.</p>
-        </details>
-        <details class="faq-item" style="position:relative; border-bottom:1px solid rgba(245,241,234,0.12)">
-          <summary style="position:relative; padding:22px 40px 22px 0; font-size:15px; line-height:1.4; color:#F5F1EA; transition:color 240ms ease">Vocês também atendem quem quer vender?</summary>
-          <p class="faq-answer" style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0 40px 24px 0">Sim. Fazemos a avaliação do imóvel, definimos a estratégia de exposição — inclusive de forma reservada, sem anúncio público — e conduzimos a negociação com compradores qualificados.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <section id="onde-estamos" style="max-width:1280px; margin:0 auto; padding:var(--pad,148px) 40px 0">
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr)); gap:58px; align-items:center">
-      <div>
-        <div style="font-size:10.5px; letter-spacing:0.26em; text-transform:uppercase; color:var(--accent,#E8B563); margin-bottom:16px">Onde estamos</div>
-        <h2 style="font-weight:400; font-size:clamp(28px,3.2vw,40px); line-height:1.14; margin:0 0 18px; max-width:400px; text-wrap:balance">No coração do Centro de Juiz de Fora</h2>
-        <p style="font-size:13.5px; line-height:1.8; color:#C7C1B7; margin:0 0 12px; max-width:360px">Av. Barão do Rio Branco, 1871 — Sala 908<br>Centro, Juiz de Fora — MG, 36013-020</p>
-        <p style="font-size:13px; line-height:1.8; color:#A8A39A; margin:0 0 30px">Seg a sex · 09h às 18h · Sáb · 09h às 13h</p>
-        <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Bar%C3%A3o+do+Rio+Branco%2C+1871+-+Centro%2C+Juiz+de+Fora+-+MG%2C+36013-020" target="_blank" rel="noopener" class="gradient-button gradient-button-variant">Traçar rota</a>
-      </div>
-      <div style="position:relative; height:380px; border-radius:12px; overflow:hidden; border:1px solid rgba(245,241,234,0.1)">
-        <iframe title="Mapa com a localização da Imobiliária Master House na Av. Barão do Rio Branco, 1871, Centro, Juiz de Fora" src="https://www.google.com/maps?q=Av.%20Bar%C3%A3o%20do%20Rio%20Branco%2C%201871%2C%20Centro%2C%20Juiz%20de%20Fora%20-%20MG%2C%2036013-020&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="width:100%; height:100%; border:0; filter:grayscale(1) invert(0.92) contrast(0.9)"></iframe>
-      </div>
-    </div>
-  </section>
-
-  <footer id="contato" style="max-width:1280px; margin:0 auto; padding:var(--pad,148px) 40px 46px">
-    <div id="sobre" data-reveal style="border-top:1px solid rgba(245,241,234,0.1); padding-top:58px; display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,168px),1fr)); gap:40px 28px">
-      <div>
-        <div style="font-family:'Geomini','Manrope',sans-serif; font-size:16px; letter-spacing:0.22em; text-transform:uppercase; margin-bottom:14px">Master House</div>
-        <p style="font-size:12.5px; line-height:1.7; color:#A8A39A; margin:0; max-width:250px">Acompanhamos famílias de Juiz de Fora na escolha do lugar onde vão viver os próximos anos.</p>
-      </div>
-      <div>
-        <div style="font-size:10.5px; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent,#E8B563); margin-bottom:14px">Endereço</div>
-        <p style="font-size:12.5px; line-height:1.8; color:rgba(245,241,234,0.55); margin:0; max-width:240px">Av. Barão do Rio Branco, 1871 — Sl 908<br>Centro, Juiz de Fora — MG<br>36013-020</p>
-      </div>
-      <div>
-        <div style="font-size:10.5px; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent,#E8B563); margin-bottom:14px">Contato</div>
-        <div style="display:flex; flex-direction:column; gap:8px; font-size:12.5px">
-          <a href="tel:+553230172878" style="color:rgba(245,241,234,0.72)" style-hover="color:#F5F1EA">(32) 3017-2878</a>
-          <a href="https://wa.me/553230172878" target="_blank" rel="noopener" style="color:rgba(245,241,234,0.72)" style-hover="color:#F5F1EA">WhatsApp</a>
-          <a href="https://masterhouseimoveis.com.br" target="_blank" rel="noopener" style="color:rgba(245,241,234,0.72)" style-hover="color:#F5F1EA">masterhouseimoveis.com.br</a>
-          <span style="color:#A8A39A">Resposta em até 24 horas</span>
-        </div>
-      </div>
-      <div>
-        <div style="font-size:10.5px; letter-spacing:0.24em; text-transform:uppercase; color:var(--accent,#E8B563); margin-bottom:14px">Avaliações</div>
-        <div style="display:flex; align-items:baseline; gap:10px">
-          <span style="font-family:'Geomini','Manrope',sans-serif; font-size:30px; line-height:1">4,8</span>
-          <span style="font-family:'Manrope',system-ui,sans-serif; font-size:13px; letter-spacing:0.16em; color:var(--accent,#E8B563)">★★★★★</span>
-        </div>
-        <p style="font-size:12px; line-height:1.7; color:#A8A39A; margin:10px 0 0">O que nossos clientes dizem</p>
-      </div>
-    </div>
-    <div style="margin-top:60px; padding-top:26px; border-top:1px solid rgba(245,241,234,0.07); display:flex; flex-wrap:wrap; gap:12px 26px; font-size:11.5px; color:#A8A39A">
+    <div style="margin-top:44px; padding-top:24px; border-top:1px solid rgba(242,237,228,0.07); display:flex; flex-wrap:wrap; gap:12px 26px; font-size:11.5px; color:#8891A0">
       <span>© 2026 Imobiliária Master House</span>
-      <a href="Politica de Privacidade.dc.html" style="color:#A8A39A" style-hover="color:#F5F1EA">Política de privacidade</a>
+      <a href="Politica de Privacidade.dc.html" style="color:#8891A0">Política de privacidade</a>
       <span style="margin-left:auto">Juiz de Fora · Minas Gerais</span>
     </div>
   </footer>
-
-  <div class="sticky-cta">
-    <a href="https://wa.me/553230172878" target="_blank" rel="noopener" class="gradient-button" aria-label="Falar com a Master House no WhatsApp">Falar no WhatsApp</a>
-    <a href="tel:+553230172878" class="gradient-button gradient-button-variant" aria-label="Ligar para (32) 3017-2878" style="flex:0 0 auto; min-width:0; padding:16px 20px">Ligar</a>
-  </div>
 </div>
 
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#E8B563&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#E8B563&quot;,&quot;#C9A227&quot;,&quot;#B98A5E&quot;,&quot;#9FB0C4&quot;],&quot;section&quot;:&quot;Aparência&quot;},&quot;density&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;Padrão&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;Compacto&quot;,&quot;Padrão&quot;,&quot;Amplo&quot;],&quot;section&quot;:&quot;Aparência&quot;}}">
+<script type="text/x-dc" data-dc-script data-props="{&quot;accent&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#C9A46A&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;options&quot;:[&quot;#C9A46A&quot;,&quot;#B98A5E&quot;,&quot;#9C8C6A&quot;,&quot;#E8B563&quot;],&quot;section&quot;:&quot;Aparência&quot;}}">
 class Component extends DCLogic {
+  state = { n: 0, assunto: "", bairro: "" };
   componentDidMount() {
     const tryPlay = () => {
-      const v = document.getElementById("mh-hero-video");
+      const v = document.getElementById("v2-video");
       if (!v) return;
       v.muted = true;
       v.defaultMuted = true;
+      v.setAttribute("muted", "");
       v.playsInline = true;
       v.loop = true;
       if (!v._endHooked) {
@@ -524,235 +522,184 @@ class Component extends DCLogic {
       if (p && p.catch) p.catch(() => {});
     };
     tryPlay();
-    this._t = setTimeout(tryPlay, 600);
+    this._retry = setTimeout(tryPlay, 600);
     this._loop = setInterval(() => {
-      const v = document.getElementById("mh-hero-video");
+      const v = document.getElementById("v2-video");
       if (v && v.paused && !document.hidden) tryPlay();
     }, 2000);
     this._onVis = () => { if (!document.hidden) tryPlay(); };
     document.addEventListener("visibilitychange", this._onVis);
-    this._motion = setTimeout(() => this.setupMotion(), 120);
-    this._onInteract = () => tryPlay();
-    document.addEventListener("pointerdown", this._onInteract, { once: true });
+    this._onTap = () => tryPlay();
+    document.addEventListener("pointerdown", this._onTap, { once: true });
+    this._t = setTimeout(() => this.setupMotion(), 120);
   }
-  setupSmoothScroll() {
-    const maxY = () => document.documentElement.scrollHeight - window.innerHeight;
-    let target = window.scrollY, current = target, running = false;
-    const loop = () => {
-      current += (target - current) * 0.11;
-      if (Math.abs(target - current) < 0.5) {
-        current = target;
-        window.scrollTo(0, current);
-        running = false;
-        return;
-      }
-      window.scrollTo(0, current);
-      this._sraf = requestAnimationFrame(loop);
-    };
-    const start = () => { if (!running) { running = true; this._sraf = requestAnimationFrame(loop); } };
-    this._wheel = e => {
-      if (e.ctrlKey || e.metaKey) return;
-      e.preventDefault();
-      const d = e.deltaMode === 1 ? e.deltaY * 22 : e.deltaMode === 2 ? e.deltaY * window.innerHeight : e.deltaY;
-      target = Math.max(0, Math.min(maxY(), target + d));
-      start();
-    };
-    window.addEventListener("wheel", this._wheel, { passive: false });
-    this._sync = () => { if (!running) { target = window.scrollY; current = target; } };
-    window.addEventListener("scroll", this._sync, { passive: true });
-    this._setScrollTarget = y => { target = Math.max(0, Math.min(maxY(), y)); current = window.scrollY; };
+  componentWillUnmount() {
+    clearTimeout(this._t);
+    clearTimeout(this._fallback);
+    clearTimeout(this._retry);
+    clearInterval(this._loop);
+    document.removeEventListener("visibilitychange", this._onVis);
+    document.removeEventListener("pointerdown", this._onTap);
+    if (this._io) this._io.disconnect();
+    if (this._onScroll) window.removeEventListener("scroll", this._onScroll);
   }
-
-  animateTitle() {
-    const h1 = document.getElementById("hero-title");
-    if (!h1 || h1.dataset.split === "1") return;
-    h1.dataset.split = "1";
-    const SPRING = "cubic-bezier(0.17,0.89,0.32,1.22)";
-    const nodes = [...h1.childNodes];
-    const letters = [];
-    h1.textContent = "";
-    nodes.forEach(n => {
-      if (n.nodeName === "BR") { h1.appendChild(document.createElement("br")); return; }
-      [...(n.textContent || "")].forEach(ch => {
-        const s = document.createElement("span");
-        s.textContent = ch === " " ? "\u00A0" : ch;
-        s.style.display = "inline-block";
-        s.style.opacity = "0";
-        s.style.transform = "translateY(24px)";
-        s.style.transition = `opacity 520ms ease, transform 620ms ${SPRING}`;
-        h1.appendChild(s);
-        letters.push(s);
-      });
-    });
-    letters.forEach((s, i) => { s.style.transitionDelay = `${180 + i * 34}ms`; });
-    requestAnimationFrame(() => requestAnimationFrame(() => {
-      letters.forEach(s => { s.style.opacity = "1"; s.style.transform = "none"; });
-    }));
-    const rule = document.getElementById("hero-underline");
-    if (rule) {
-      const total = 180 + letters.length * 34 + 120;
-      rule.style.transition = `width 900ms cubic-bezier(0.16,1,0.3,1) ${total}ms`;
-      requestAnimationFrame(() => requestAnimationFrame(() => { rule.style.width = "300px"; }));
-    }
-  }
-
   setupMotion() {
-    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const EASE = "cubic-bezier(0.16,1,0.3,1)";
-    this.setupSmoothScroll();
-
-    this.animateTitle();
-    const SHIFT = 26;
-    const hero = [...document.querySelectorAll("[data-hero]")];
+    this._calmo = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const SOBE = "translateY(20px) scale(0.98)";
+    const BLUR = this._calmo ? "blur(3px)" : "blur(7px)";
+    const todos = [...document.querySelectorAll("[data-rv]")];
+    if (document.visibilityState === "hidden") {
+      todos.forEach(el => { el.style.opacity = "1"; el.style.transform = ""; el.style.filter = ""; });
+      document.addEventListener("visibilitychange", () => { if (!document.hidden) this.setupMotion(); }, { once: true });
+      return;
+    }
+    const hero = [...document.querySelectorAll("section:first-of-type [data-rv]")];
     hero.forEach((el, i) => {
-      el.style.opacity = "0";
-      el.style.transform = `translateY(${SHIFT}px)`;
-      el.style.transition = `opacity 1100ms ${EASE} ${140 + i * 150}ms, transform 1100ms ${EASE} ${140 + i * 150}ms`;
-      requestAnimationFrame(() => requestAnimationFrame(() => {
+      el.dataset.rvDone = "1";
+      const mostrar = () => {
+        el.style.transition = `opacity 1000ms ${EASE} ${200 + i * 140}ms, transform 1000ms ${EASE} ${200 + i * 140}ms, filter 1000ms ${EASE} ${200 + i * 140}ms`;
         el.style.opacity = "1";
         el.style.transform = "";
-      }));
-    });
-
-    const SEL = [
-      "#imoveis > h2",
-      "#imoveis article",
-      "#imoveis > div > div > div",
-      "#imoveis > div > div > h3",
-      "#imoveis > div > div > p",
-      "#exclusivos h2",
-      "#exclusivos > div > div > p",
-      "#exclusivos .gradient-button",
-      "#exclusivos .media-frame",
-      "#diferenciais > h2",
-      "#diferenciais article",
-      "#avaliacoes > div:first-child",
-      "#avaliacoes figure",
-      "#faq > div > div",
-      "#onde-estamos > div > div",
-      "footer > div > div"
-    ].join(",");
-    const raw = [...document.querySelectorAll(SEL)].filter(el => !el.closest("[data-hero]"));
-    const set = new Set(raw);
-    const items = raw.filter(el => {
-      let p = el.parentElement;
-      while (p) { if (set.has(p)) return false; p = p.parentElement; }
-      return true;
-    });
-    if (!("IntersectionObserver" in window)) return;
-    items.forEach(el => {
+        el.style.filter = "";
+      };
       el.style.opacity = "0";
-      el.style.transform = "translateY(30px)";
-      el.style.willChange = "opacity, transform";
+      el.style.transform = SOBE;
+      el.style.filter = BLUR;
+      requestAnimationFrame(mostrar);
+      setTimeout(mostrar, 400);
     });
+    const items = todos.filter(el => !el.dataset.rvDone);
+    items.forEach(el => { el.style.opacity = "0"; el.style.transform = SOBE; });
+    if (!("IntersectionObserver" in window)) { items.forEach(el => { el.style.opacity = "1"; el.style.transform = ""; }); return; }
     this._io = new IntersectionObserver((entries, obs) => {
-      const shown = entries.filter(e => e.isIntersecting || e.boundingClientRect.bottom < 0);
-      shown.forEach((e, i) => {
+      entries.filter(e => e.isIntersecting || e.boundingClientRect.bottom < 0).forEach((e, i) => {
         const el = e.target;
-        const base = el.style.transition && el.style.transition.includes("transform 420ms")
-          ? "transform 420ms " + EASE + ", box-shadow 420ms ease, "
-          : "";
-        el.style.transition = `${base}opacity 1000ms ${EASE} ${i * 130}ms, transform 1000ms ${EASE} ${i * 130}ms`;
+        el.style.transition = `opacity 700ms ${EASE} ${Math.min(i,4) * 120}ms, transform 700ms ${EASE} ${Math.min(i,4) * 120}ms`;
         el.style.opacity = "1";
         el.style.transform = "";
         obs.unobserve(el);
       });
-    }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+    }, { threshold: 0.12, rootMargin: "0px 0px -6% 0px" });
     items.forEach(el => this._io.observe(el));
+    this._fallback = setTimeout(() => {
+      items.forEach((el, i) => {
+        if (el.style.opacity !== "0") return;
+        if (el.getBoundingClientRect().top < window.innerHeight * 1.1) {
+          el.style.transition = `opacity 700ms ${EASE} ${Math.min(i,5) * 120}ms, transform 700ms ${EASE} ${Math.min(i,5) * 120}ms`;
+          el.style.opacity = "1";
+          el.style.transform = "";
+        }
+      });
+    }, 1400);
 
-    const header = document.querySelector(".site-header");
-    const video = document.getElementById("mh-hero-video");
-    let ticking = false;
     const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        const y = window.scrollY || 0;
-        if (header) header.classList.toggle("is-stuck", y > 40);
-        if (video) video.style.translate = `0 ${Math.min(y * 0.14, 110)}px`;
+      const y = window.scrollY || 0;
+      {
+        if (v0) v0.style.translate = `0 ${Math.min(y * 0.13 * amp, 110)}px`;
         const vh = window.innerHeight;
-        document.querySelectorAll(".media-frame image-slot").forEach(m => {
-          const r = m.getBoundingClientRect();
+        this._par.forEach(({ el, k }) => {
+          const r = el.parentElement.getBoundingClientRect();
           if (r.bottom < -200 || r.top > vh + 200) return;
-          const off = (r.top + r.height / 2 - vh / 2) / vh;
-          m.style.translate = `0 ${(-off * 26).toFixed(2)}px`;
+          const centro = (r.top + r.height / 2 - vh / 2) / vh;
+          el.style.translate = `0 ${(centro * k).toFixed(1)}px`;
         });
-        items.forEach(el => {
-          if (el.style.opacity !== "0") return;
-          if (el.getBoundingClientRect().bottom < 0) {
-            el.style.transition = "opacity 400ms ease, transform 400ms ease";
-            el.style.opacity = "1";
-            el.style.transform = "";
-          }
-        });
-        ticking = false;
+      }
+      items.forEach(el => {
+        if (el.style.opacity !== "0") return;
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight * 0.92) {
+          el.style.transition = `opacity 700ms ${EASE}, transform 700ms ${EASE}`;
+          el.style.opacity = "1";
+          el.style.transform = "";
+          return;
+        }
+        if (r.bottom < 0) {
+          el.style.transition = "opacity 400ms ease, transform 400ms ease";
+          el.style.opacity = "1";
+          el.style.transform = "";
+        }
       });
     };
-    const navLinks = [...document.querySelectorAll(".nav-link")];
-    const ids = [...new Set(navLinks.map(a => a.getAttribute("href")).filter(h => h && h.startsWith("#")))];
-
-    const easeInOutCubic = t => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
-    const glideTo = (top, dur) => {
-      const start = window.scrollY;
-      const dist = top - start;
-      if (Math.abs(dist) < 2) return;
-      const t0 = performance.now();
-      const step = now => {
-        const p = Math.min((now - t0) / dur, 1);
-        window.scrollTo(0, start + dist * easeInOutCubic(p));
-        if (p < 1) this._raf = requestAnimationFrame(step);
-      };
-      this._raf = requestAnimationFrame(step);
-    };
-
-    this._onNavClick = e => {
-      const a = e.target.closest('a[href^="#"]');
-      if (!a) return;
-      const id = a.getAttribute("href").slice(1);
-      const target = document.getElementById(id);
-      if (!target) return;
-      e.preventDefault();
-      const top = window.scrollY + target.getBoundingClientRect().top - 96;
-      const dur = Math.min(1200, Math.max(520, Math.abs(top - window.scrollY) * 0.6));
-      glideTo(Math.max(top, 0), dur);
-      history.replaceState(null, "", "#" + id);
-    };
-    document.addEventListener("click", this._onNavClick);
-
-    const setCurrent = () => {
-      const mid = window.scrollY + window.innerHeight * 0.35;
-      let active = null;
-      ids.forEach(h => {
-        const el = document.getElementById(h.slice(1));
-        if (el && window.scrollY + el.getBoundingClientRect().top <= mid) active = h;
-      });
-      navLinks.forEach(a => a.classList.toggle("is-current", a.getAttribute("href") === active));
-    };
-
-    const onScrollAll = () => { onScroll(); setCurrent(); };
-    onScrollAll();
-    window.addEventListener("scroll", onScrollAll, { passive: true });
-    this._onScroll = onScrollAll;
+    const v0 = document.getElementById("v2-video");
+    const par = (el, k) => (el ? [{ el, k }] : []);
+    const amp = this._calmo ? 0.3 : 1;
+    const velocidades = [15, 24, 19, 28].map(v => v * amp);
+    this._par = [
+      ...par(document.querySelector(".sobre-fig img"), 26 * amp),
+      ...par(document.querySelector("#confianca > div:first-child img"), 34 * amp),
+      ...[...document.querySelectorAll(".prop img")].map((el, i) => ({ el, k: velocidades[i % 4] }))
+    ];
+    this._par.forEach(({ el }) => {
+      el.style.height = "118%";
+      el.style.top = "-9%";
+      el.style.position = "absolute";
+      el.style.willChange = "translate";
+    });
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    this._onScroll = onScroll;
   }
-  componentWillUnmount() {
-    clearTimeout(this._t);
-    clearInterval(this._loop);
-    clearTimeout(this._motion);
-    if (this._io) this._io.disconnect();
-    if (this._onScroll) window.removeEventListener("scroll", this._onScroll);
-    if (this._onNavClick) document.removeEventListener("click", this._onNavClick);
-    if (this._raf) cancelAnimationFrame(this._raf);
-    if (this._sraf) cancelAnimationFrame(this._sraf);
-    if (this._wheel) window.removeEventListener("wheel", this._wheel);
-    if (this._sync) window.removeEventListener("scroll", this._sync);
-    document.removeEventListener("pointerdown", this._onInteract);
-    document.removeEventListener("visibilitychange", this._onVis);
+  chips() {
+    const { assunto, bairro } = this.state;
+    const on = (cur, v) => (cur === v ? "1" : "");
+    return {
+      aComprar: on(assunto, "Comprar"),
+      aVender: on(assunto, "Vender"),
+      aAvaliar: on(assunto, "Avaliar meu imóvel"),
+      aDuvida: on(assunto, "Só tirar uma dúvida"),
+      bCentro: on(bairro, "Centro"),
+      bAltoPassos: on(bairro, "Alto dos Passos"),
+      bBomPastor: on(bairro, "Bom Pastor"),
+      bCascatinha: on(bairro, "Cascatinha"),
+      bGranbery: on(bairro, "Granbery"),
+      bNaoSei: on(bairro, "Ainda não sei")
+    };
+  }
+  mensagem() {
+    const { assunto, bairro } = this.state;
+    if (!assunto && !bairro) return "Olá! Vim pelo site e gostaria de conversar sobre um imóvel.";
+    const frases = {
+      "Comprar": "estou procurando um imóvel para comprar",
+      "Vender": "tenho um imóvel para vender",
+      "Avaliar meu imóvel": "gostaria de uma avaliação do meu imóvel",
+      "Só tirar uma dúvida": "queria tirar uma dúvida"
+    };
+    let m = "Olá! Vim pelo site e " + (frases[assunto] || "gostaria de conversar");
+    if (bairro && bairro !== "Ainda não sei") m += ", na região do " + bairro;
+    else if (bairro) m += ", ainda sem região definida";
+    return m + ". Podemos conversar?";
   }
   renderVals() {
-    const pads = { "Compacto": "104px", "Padrão": "148px", "Amplo": "196px" };
+    const curves = { "Reta": "0%", "Suave": "8%", "Acentuada": "15%" };
+    const accent = this.props.accent || "#C9A46A";
+    const darken = hex => {
+      const m = /^#?([0-9a-f]{6})$/i.exec(String(hex).trim());
+      if (!m) return "#7A5F35";
+      const n = parseInt(m[1], 16);
+      const f = 0.56;
+      const r = Math.round(((n >> 16) & 255) * f);
+      const g = Math.round(((n >> 8) & 255) * f);
+      const b = Math.round((n & 255) * f);
+      return "#" + [r, g, b].map(v => v.toString(16).padStart(2, "0")).join("");
+    };
     return {
-      accent: this.props.accent ?? "#E8B563",
-      sectionPad: pads[this.props.density] ?? "148px"
+      accent: accent,
+      accentInk: darken(accent),
+      curve: curves[this.props.curve] ?? "8%",
+      ...this.chips(),
+      mensagem: this.mensagem(),
+      pickAssunto: e => {
+        const v = e.currentTarget.value;
+        this.setState(s => ({ assunto: s.assunto === v ? "" : v }));
+      },
+      pickBairro: e => {
+        const v = e.currentTarget.value;
+        this.setState(s => ({ bairro: s.bairro === v ? "" : v }));
+      },
+      abrirWhatsApp: () => {
+        window.open(`https://wa.me/553230172878?text=${encodeURIComponent(this.mensagem())}`, "_blank");
+      }
     };
   }
 }
