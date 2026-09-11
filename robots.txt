@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /obrigado
+Disallow: /404
+
+Sitemap: https://masterhouseimoveis.com.br/sitemap.xml
